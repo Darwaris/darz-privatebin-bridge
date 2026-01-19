@@ -1,8 +1,6 @@
-module.exports = function handler(req, res) {
+module.exports = (req, res) => {
   res.status(200).json({
-    ok: true,
-    service: "darz-privatebin-bridge",
-    message: "API is working perfectly 🚀",
-    time: new Date().toISOString()
+    success: true,
+    message: "Darz PrivateBin Bridge API working 🚀"
   });
 };
